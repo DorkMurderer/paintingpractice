@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity .5s;
+    background: linear-gradient(to right, #d9dce7, #f700ff);
+    border-radius: 10px;
+    border: 3px solid white
+} 
+
+ 
+.nav div, button, input{
+    margin: 5px;
+}
+
+.nav:hover{
+    cursor: pointer;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.clr{
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform .5s;
+
+}
+
+.clr:hover{
+    transform: scale(1.2)
+}
+
+.clr:nth-child(1){
+    background-color: #000;
+}
+.clr:nth-child(2){
+  background-color: red;
+}
+.clr:nth-child(3){
+  background-color: orange;
+}
+.clr:nth-child(4){
+   background-color: blue;
+}
+.clr:nth-child(5){
+   background-color: purple;
+}
+.clr:nth-child(6){
+     background: yellowgreen;
+}
+.clr:nth-child(7){
+    background-color: yellow;
+}
+.clr:nth-child(8){
+  background-color: #fff;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: .6rem 1em;
+    border-radius: 3px;
+    background-color: limegreen;
+    color: white;
+    border: 15px;
+    font-weight: bold;
+}
+
+.clear{
+    background-color: red;
+}
+
+input[type=color]{
+    width: 60px;
+    height: 40px;
+
+}
+
+
+.ageOutputId{
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+.ageInputId{
+    background: linear-gradient(to right, #000428 0%, #004e92 100%);
+    height: 7px;
+
+    outline: none;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    border-radius: 5px;
+    border:3px solid white;
+    accent-color: white;
+}
+
+.emoji{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+canvas{
+    touch-action: none;
+}
+
+
+@media screen and (max-width: 450px){
+     .nav{
+        width: 50px;
+        flex-direction: column;
+        height:90%;
+        margin-left:155px ;
+        align-content: center;
+     }
+}
